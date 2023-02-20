@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>menu</title>
+    <style type="text/css">
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #222;
+}
+
+.main {
+  width: 1170px;
+  margin: 100px auto;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.section-title h2 {
+  text-transform: capitalize;
+  font-size: 35px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+.section-title h2:before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background-color: #00875c;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.menus {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.menu-column {
+  width: 31%;
+}
+.menu-column h4 {
+  text-transform: capitalize;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+.menu-column h4:before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background-color: #00875c;
+  bottom: 0;
+}
+.single-menu {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+.single-menu img {
+  border-radius: 50%;
+  max-width: 110px;
+  border: 1px dashed #ddd;
+  padding: 3px;
+  margin-right: 15px;
+  transition: .3s;
+}
+.single-menu:hover img{
+    transform: none(360deg);
+}
+.single-menu .menu-content h5 {
+  text-transform: capitalize;
+  font-size: 22px;
+  font-weight: 500;
+  border-bottom: 1px dashed #222;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+.single-menu .menu-content h5 span {
+  color: tomato;
+  float: right;
+  font-weight: 600;
+  font-style: italic;
+}
+    </style>
+</head>
+<body bgcolor="#FFD1D1">
+<div class="main">
+        <div class="section-title">
+            <h2>our menu</h2>
+        <div class="menus">
+            <div class="menu-column">
+                <h4>breakfast</h4>
+                <div class="single-menu">
+                    <img src="idli.jfif" alt="">
+                    <div class="menu-content">
+                        <h5>IDLI <span>50 rs</span></h5>
+                        <p>normal idli, maasala idli</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="dosa.jfif" alt="">
+                    <div class="menu-content">
+                        <h5>DOSA <span>150 rs</span></h5>
+                        <p>MAASALA DOSA, EGG DOSA, PLAIN DOSA, ONION DOSA</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="indian-breakfast-ven-pongal-sambar-tamil-nadu-ven-pongal-sambar-coconut-chutney-popular-indian-breakfast-food-tamil-nadu-193589393.jpg" alt="">
+                    <div class="menu-content">
+                        <h5>PONGAL <span>80 rs </span></h5>
+                        <p>PONGAL</p>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-column">
+                <h4>lunch</h4>
+                <div class="single-menu">
+                    <img src="south-indian-meals-served-banana-leaf-traditional-cuisine-57372380.jpg" alt="">
+                    <div class="menu-content">
+                        <h5>MEALS <span>180 rs</span></h5>
+                        <p>FULL MEALS, HALF MEALS</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="biriyani.jfif" alt="">
+                    <div class="menu-content">
+                        <h5>BIRIYANI<span>250 rs</span></h5>
+                        <p>CHICKEN BIRIYANI, MUTTON BIRIYANI,EGG BIRIYANI,</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="veg.jfif" alt="">
+                    <div class="menu-content">
+                        <h5>VEG RICE <span>150 rs</span></h5>
+                        <p>CURD RICE, MUSTROOM RICE, VEGETABLE RICE</p>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-column">
+                <h4>DINNER</h4>
+                <div class="single-menu">
+                    <img src="dinner.jpg" alt="">
+                    <div class="menu-content">
+                        <h5>NON VEG <span>480 rs</span></h5>
+                        <p>Lemon Chicken,Chettinad Fish Fry, Keema Biryani, Prawn Curry....etc</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="currys .jpg" alt="">
+                    <div class="menu-content">
+                        <h5>VEG CURRYS<span>250 rs</span></h5>
+                        <p>BABBY CORN FRY, CAULIFLOWER CURRY, VEG MANCHURIAN.......etc</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="images.jfif" alt="">
+                    <div class="menu-content">
+                        <h5>VEG FOODS<span>380 rs</span></h5>
+                        <p>Veg Fried Rice,Garlic Fried Rice,Salt-and-Pepper Cauliflower....etc</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html

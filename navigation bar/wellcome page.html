@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MY FOODS|| DashBoard</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0
+}
+body {
+  font-family: "lato", sans-serif;
+  color: white;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+h1 {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 10px 0;
+  line-height: 1.2;
+}
+h2 {
+  font-size: 25px;
+  font-weight: 300;
+  margin: 10px 0;
+  line-height: 1.2;
+}
+p {
+  font-size: 30px;
+}
+img {
+  width: 100%;
+}
+li {
+  list-style-type: none;
+}
+p {
+  font-size: 20px;
+  margin: 10px 0;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  overflow: visible;
+}
+.navbar {
+  background-color: #4AB6C0;
+  height: 70px;
+  padding: 0 30px;
+}
+.navbar h1 {
+  font-size: 30px;
+  font-weight: 300;
+  margin: 10px 0;
+  line-height: 1.2;
+  color: black;
+}
+.navbar .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.navbar ul {
+  display: flex;
+}
+.navbar a {
+  color: white;
+  padding: 9px;
+  margin: 0 10px;
+}
+.navbar a:hover {
+  color: #ede20c;
+  border-bottom: 3px solid #9867C5;
+}
+.showcase {
+  height: 300px;
+  background-color: #4AB6C0;
+}
+.showcase p {
+  margin-bottom: 30px;
+}
+.showcase img {
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
+}
+.showcase-form {
+  padding-left: 7px;
+}
+/grid implementation/
+.grid {
+  overflow: visible;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+.grid-item-1,
+.grid-item-2 {
+  position: relative;
+  top: 50px;
+}
+.showcase input[type='text'] {
+  padding: 10px 70px 10px 0;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  padding-left: 6px;
+}
+
+.btn {
+  border-radius: 6px;
+  padding: 12px 20px;
+  background: #9867C5;
+  border: none;
+  margin-left: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+.showcase-form {
+  margin: auto;
+}
+.little-info {
+  font-size: 15px;
+  font-family: "poppins", sans-serif;
+
+}
+.lower-container {
+  margin: 120px auto;
+  padding: 0;
+  max-width: 1400px;
+}
+.title {
+  color: black;
+  font-size: 20px;
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.text {
+  color: black;
+  font-size: 19px;
+  width: 100%;
+  padding: 10px;
+  margin: 0, 20px;
+  text-align: justify;
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.card {
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: -7px -7px 20px rgba(0, 0, 0, 0.2),
+               7px  7px 20px rgba(0, 0, 0, 0.2)
+}
+.circle {
+    background-color: transparent;
+    border:3px solid purple;
+    height:90px;
+    position: relative;
+    top: -30px;
+    left: 120px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:90px;
+}
+
+footer {
+  background-color: #9AB5BC;
+  padding: 20px 10px;
+}
+
+footer a {
+  color: white;
+  margin: 0 10px;
+}
+footer a:hover {
+  color: #f4e90b;
+  border-bottom: 2px solid #9867C5;
+}
+}
+  </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container flex">
+          <h1 class="logo">MY FOODS</h1>
+            <nav>
+              <ul>
+                <li class="nav"><a class="outline" href="log.html">Log in</a></li>
+                <li class="nav"><a href="" class="outline">Rate Us</a></li>
+              </ul>
+            </nav>
+        </div>
+      </div>
+      <section class="showcase">
+        <div class="container">
+            <div class="grid">
+              <div class="grid-item-1">
+                <div class="showcase-text">
+                  <h1>We are providing here good and healthy foods.</h1>
+                  <p class="supporting-text">Here we providing over 200 items of foods</p>
+                </div>
+                <div class="showcase-form">
+                  <form action="">
+                    <input type="text" placeholder="   🔍 Search items">
+                    <input type="submit" class="btn" value="Search">
+                  </form>
+                  <p class="little-info">Order Your favirout Food Items Here</p>
+                </div>
+              </div>
+              <div class="grid-item-2">
+                <div class="image">
+                  <img  src="food 1.jfif">
+                </div>
+              </div>
+           </div>
+        </div>
+      </section> 
+      <div class="lower-container container">
+        <section class="stats">
+          <div class="flex">
+            </div>
+            <div class="stat">
+            <img  src="food 1.jfif">
+            </div>
+        </section>
+        <section class="testimonials">
+            <div class="container">
+              <div class="testimonial grid-3">
+          </section>
+          <footer>
+            <div class="container grid-3">
+              <div class="copyright">
+                <h1>MY FOODS</h1>
+                <p>Copyright &copy; 2022</p>
+              </div>
+              <nav class="links">
+                <ul>
+                  <li><a href="form.html" class="outline">Home</a></li>
+                  <li><a href="" class="outline">Drivers</a></li>
+                  <li><a href="" class="outline">Categories</a></li>
+                </ul>
+              </nav>
+              <div class="profiles">
+                <a href=""><em class="fab fa-twitter fa-2x"></em></a>
+                <a href=""><em class="fab fa-instagram fa-2x"></em></a>
+                <a href=""><em class="fab fa-facebook fa-2x"></em></a>
+                <a href=""><em class="fab fa-whatsapp fa-2x"></em></a>
+              </div>
+            </div>
+          </footer>
+</body>
+</html>

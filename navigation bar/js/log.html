@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>login validation</title>
+<style>
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Jost', sans-serif;
+ outline: none;
+color: #a0355a;
+}
+
+body{
+background: linear-gradient(to right, #c52273, #f16160);
+}
+.wrapper{
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.form{
+width: 425px;
+height: auto;
+background: black;
+ padding: 35px 50px;
+border-radius: 2px;
+}
+.form .title{
+text-align: center;
+margin-bottom: 20px;
+font-weight: 700;
+font-size: 24px;
+}
+
+.form .input{
+ margin-bottom: 20px;
+width: 325px;
+ position: relative;
+padding: auto;
+ align-content: center;
+}
+.form .input .button{
+text-transform: uppercase;
+ letter-spacing: 3px;
+}
+</style>
+</head>
+<body>
+<script> 
+var attempt = 3;
+function validate(){ 
+var username = document.getElementById("username").value; 
+var password = document.getElementById("password").value; 
+if(username ==""&& password==""){ 
+alert("Username and Password cannot be Empty!!!"); 
+return false; 
+} 
+if ( username == "pavankumar@gmail.com" && password == "123456789"){ 
+ 
+window.location = "menu.html"; 
+return false; 
+} 
+else{ 
+attempt --; 
+alert("Given Username&Password does not match,Please check Again!!Remaining   "+attempt+" attempt more to login"):
+f( attempt == 0){ 
+document.getElementById("username").disabled = true; 
+document.getElementById("password").disabled = true; 
+document.getElementById("submit").disabled = true; 
+return false; 
+} 
+} 
+} 
+</script> 
+<div class="wrapper">
+<div class="form">
+<div class="title">
+ONLINE FOOD DELIVERY SYSTEM
+</div>
+<form id="form_id" method="post" name="myform">
+<label>Username :</label> 
+<input type="text" name="username" id="username" placeholder="Username"/> <br><br>
+<label>Password :</label> 
+<input type="password" name="password" id="password" placeholder="Password"/><br><br> 
+<center><input type="button" value="Login" id="submit" onclick="validate()"/></center>
+</form> 
+</div>
+</div>
+</body>
+</html>

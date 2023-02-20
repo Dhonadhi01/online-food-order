@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>SEARCH</title>
+        <style>
+            .search{
+                padding: 10px;
+                color: #eee;
+                background: linear-gradient(to bottom right,#B1227A,#429AEE);
+                border-radius: 4px;
+                display: button;
+                align-items: center;
+            }
+            .search :is(input, button){
+                padding: 0px;
+                color: inherit;
+                border: none;
+                align-items: button;
+                background: transparent;
+                outline: goldenrod;
+            }
+            .search__input{
+                width: 10;
+                transition: width .10s;
+            }
+            .search__btn{
+                width: 25px;
+                height: 25px;
+                display: button;
+                place-items: right;
+                cursor: pointer;
+            }
+            .search:focus-within input{
+                width: 200px;
+            }
+            ::placeholder{
+                color: inherit;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+        <form class="search">
+            <input type="text" placeholder="search" class="search__input">
+            <button type="button" class="search__btn">
+                <i class="ri-search-2-line"></i>
+            </button>
+        </form>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<html>
+<head>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-container > div {
+  background-color: 5F9EA0;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body background="solid background.jpg">
+<h1><center>WELLCOME TO ONLINE FOODS</center></h1>
+<div class="grid-container">
+  <div class="item1">HOTELS</div>
+  <div class="item2">MENU</div>
+  <div class="item3">FOODS</div>  
+  <div class="item4">ORDER</div>
+  <div class="item5">PAYMENT</div>
+</div>
+</div>
+</body>
+</html>
